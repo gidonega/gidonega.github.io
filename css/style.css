@@ -18,7 +18,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../images/background.png') no-repeat center top fixed;
+    background: url('/images/background.png') no-repeat center top fixed;
     background-size: cover;
     opacity: 0.5;
     z-index: -1; 
@@ -71,4 +71,28 @@ footer {
 section#home img {
     max-width: 100px;
     border-radius: 50%;
+    position:relative;
+}
+
+section#home {
+    text-align: center; 
+}
+.cta-button{
+    background-color: lightpink;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.cta-button:hover {
+    background-color: #d3aebf;
+    justify-content: center;
 }
