@@ -21,6 +21,17 @@ header {
     text-align: center;
     height: 20px;
 }
+#home {
+  position: relative;
+}
+.imagem-esquerda {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 150px; 
+  height: auto; 
+  border-radius: 50%; 
+}
 ul {
     list-style: none;
     margin: 0;

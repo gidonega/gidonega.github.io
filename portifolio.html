@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
     <link rel="stylesheet" href="portifolio.css">
-    <!-- Correção: incluir o script JS corretamente -->
+    
     <script src="portifolio.js" defer></script>
 </head>
 <body>
@@ -14,77 +14,88 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="portifolio.html">Portifolio</a></li>
+                <li><a href="portifolio.html">Projetos</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="container">
-        <div class="text-center">
-          <h1>Portifólio</h1>
-        </div>
-        <div class="card-columns">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="/images/portifolio.png" alt="Project Image">
-                <div class="card-body">
-                  <h5 class="card-title">Project Xmen</h5>
-                  <p class="card-text">Este projeto foi feito em uma aula de desenvolvimento
-                    de framework, onde teriamos que fazer uma pagina cada aluno. Foi feito um grupo de três pessoas,
-                    e eu fiquei responsável pela página de animação.
-                  </p>
-                  <p class="card-text">
-                      <small class="text-muted"><i class="fas fa-eye"></i><i class="far fa-user"></i> <i class="fas fa-calendar-alt"></i></small>
-                  </p>
-                </div>
-              </a>
+    <section class="dark">
+      <div class="container py-4">
+        <h1 class="h1 text-center" id="pageHeaderTitle">My Cards</h1>
+    
+        <article class="postcard dark blue">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="/images/Projetos.png" alt="Image Title" />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title blue"><a href="#">Project Xmen</a></h1>
+            <div class="postcard__subtitle small">
             </div>
-            <div class="card-columns">
-                <div class="card">
-                  <a href="#">
-                    <img class="card-img-top" src="/images/netflix.png" alt="Project Image">
-                    <div class="card-body">
-                      <h5 class="card-title">Project Netflix</h5>
-                      <p class="card-text">Este projeto foi em um curso que tive, para aprender a fazer uma plataforma igual a netflix. 
-                      </p>
-                      <p class="card-text">
-                          <small class="text-muted"><i class="fas fa-eye"></i><i class="far fa-user"></i> <i class="fas fa-calendar-alt"></i></small>
-                      </p>
-                    </div>
-                  </a>
-                </div>
-        </div>
-        <div class="card-columns">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="/images/loguim.png" alt="Project Image">
-                <div class="card-body">
-                  <h5 class="card-title">Project Loguin</h5>
-                  <p class="card-text">Este projeto foi uma página de loguim,que também estava fazendo em um curso.
-                  </p>
-                  <p class="card-text">
-                      <small class="text-muted"><i class="fas fa-eye"></i><i class="far fa-user"></i> <i class="fas fa-calendar-alt"></i></small>
-                  </p>
-                </div>
-              </a>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Este projeto foi uma atividade de desenvolvimento de framework, que fizemos em grupo sobre os quadrinhos de Xmen. <br>Nesta página foi utilizado as linguagens:<br> HTML<br> CSS<br>JAVASCRIPT</div>
+           
+          </div>
+        </article>
+        <article class="postcard dark red">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="/images/portifolio.png" alt="Image Title" />	
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title red"><a href="#">Project Página Xmen</a></h1>
+            
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Falando mais sobre o projeto xmen, cada um ficou responsável por uma página do site, a minha página escolhida foi a animação. 
+              Lá eu mostrei todas as animações em quadrinhos , o ano de lançamento e um pouquinho da história da animação. <br>Nesta página foi utilizado as linguagens:<br> HTML<br> CSS<br>JAVASCRIPT
             </div>
-            <div class="card-columns">
-                <div class="card">
-                  <a href="#">
-                    <img class="card-img-top" src="/images/loguin2.png" alt="Project Image">
-                    <div class="card-body">
-                      <h5 class="card-title">Project Loguin</h5>
-                      <p class="card-text">Este projeto foi uma segunda página de loguim,que também estava fazendo em um curso.
-                      </p>
-                      <p class="card-text">
-                          <small class="text-muted"><i class="fas fa-eye"></i><i class="far fa-user"></i> <i class="fas fa-calendar-alt"></i></small>
-                      </p>
-                    </div>
-                  </a>
-                </div>
+            
+          </div>
+     
       </div>
+    </section>
+    
+    <section class="light">
+   
+    
+        <article class="postcard light blue">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="/images/loguin2.png" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue"><a href="#">Project Loguin</a></h1>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Este foi um dos primeiros projetos de página de loguin feitas. <br>Nesta página foi utilizado as linguagens:<br> HTML<br> CSS<br>JAVASCRIPT</div>
+          </div>
+        </article>
+        <article class="postcard light red">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="/images/netflix.png" alt="Image Title" />	
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red"><a href="#">Project Netflix</a></h1>
+           
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Esta foi um site de treinamento de como fazer o site da netflix. <br>Nesta página foi utilizado as linguagens:<br> HTML<br> CSS<BR>JAVASCRIPT</div>
+           
+          </div>
+        </article>
+        <article class="postcard light green">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="/images/loguim.png" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green"><a href="#">Project página de loguin</a></h1>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Esse foi uma das últimas páginas de loguin que fiz, bem mais detalhada que a primeira.<br> Nesta página utilizei as linguagens:<br>HTML<br> CSS<BR>JAVASCRIPT</div>
 
+          </div>
+        </article>
+        
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Gidonega</p>
+  </footer>
 
 </body>
 </html>

@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="portifolio.html">Portifolio</a></li>
+                <li><a href="portifolio.html">Projetos</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
@@ -46,24 +46,41 @@
                   </div>
                   <div class="screen-body-item">
                     <div class="app-form">
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="NAME" value="">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="EMAIL">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="TEL">
-                      </div>
+                      <div class="app-form">
+                        <div class="app-form-group">
+                          <input class="app-form-control" id="name" placeholder="NAME" value="">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" id="email" placeholder="EMAIL">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" id="tel" placeholder="TEL">
+                        </div>
                      
-                      <div class="app-form-group buttons">
-                        <button class="app-form-button">CANCEL</button>
-                        <button class="app-form-button">SEND</button>
-                      </div>
+                        <div class="app-form-group buttons">
+                          <button class="app-form-button">CANCEL</button>
+                          <button class="app-form-button" onclick="saveData()">SEND</button>
+                        </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <script>
+                function saveData() {
+                  // Captura os valores dos inputs
+                  var name = document.getElementById('name').value;
+                  var email = document.getElementById('email').value;
+                  var tel = document.getElementById('tel').value;
+              
+                  // Armazena os valores no localStorage
+                  localStorage.setItem('name', name);
+                  localStorage.setItem('email', email);
+                  localStorage.setItem('tel', tel);
+              
+                  alert('Dados salvos com sucesso!');
+                }
+              </script>
+              
               
             </div>
           </div>
