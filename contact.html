@@ -76,8 +76,18 @@
                   localStorage.setItem('name', name);
                   localStorage.setItem('email', email);
                   localStorage.setItem('tel', tel);
+
+                  for (let i = 0; i < localStorage.length; i++){
+                    let key = localStorage.key(i);
+                    let value = localStorage.getItem(key);
+                    alert(key+': '+value);
+                  }
               
                   alert('Dados salvos com sucesso!');
+
+                  document.getElementById('name').value="";
+                  document.getElementById('email').value="";
+                  document.getElementById('tel').value="";
                 }
               </script>
               
